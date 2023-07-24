@@ -1,0 +1,12 @@
+# dest - /home/ubuntu/db.properties
+# dest - /home/______/db.properties
+---
+- name: Update dynamic server
+  hosts: n4
+  
+  tasks:
+  - name: copy DB properties
+    copy:
+      dest: /home/ubuntu/db.properties
+      src: db.prop
+...      
